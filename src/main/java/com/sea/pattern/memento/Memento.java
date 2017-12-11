@@ -1,0 +1,24 @@
+package com.sea.pattern.memento;
+
+/**
+ * 
+ * ±¸ÍüÂ¼Àà
+ *
+ * @author huachengwu (mailto:huachengwu@tansun.com.cn)
+ */
+public class Memento {
+	private String value;
+
+	public String getValue() {
+		return value;
+	}
+
+	public void setValue(String value) {
+		this.value = value;
+	}
+
+	public Memento(String value) {
+		super();
+		this.value = value;
+	}
+}
