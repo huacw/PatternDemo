@@ -24,7 +24,7 @@ public class CglibProxy implements MethodInterceptor {
 		return enhancer.create();
 	}
 
-	public <T> T newInstance(Class<T> clazz) {
+	public <T> T newProxyInstance(Class<T> clazz) {
 		// 设置需要创建子类的类
 		enhancer.setSuperclass(clazz);
 		enhancer.setCallback(this);
